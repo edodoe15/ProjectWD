@@ -19,3 +19,10 @@ header{
     padding-bottom: 30px;
 }
 
+.container{
+    min-height: 100vh;
+}
+
+.dioA{
+    padding-top: 10px;;
+}
