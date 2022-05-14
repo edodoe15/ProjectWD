@@ -26,3 +26,15 @@ header{
 .dioA{
     padding-top: 10px;;
 }
+
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.3rem;
+    background: #fff;
+    text-align: center;
+}
+
+.meal-result{
+    margin-top: 4rem;
+}
