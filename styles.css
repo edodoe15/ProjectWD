@@ -38,3 +38,22 @@ header{
 .meal-result{
     margin-top: 4rem;
 }
+
+nav{
+    background-color: rgba(17, 17, 17, 0.338);
+    text-align: center;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 1.3rem;
+    display: flex;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: medium;
+    color: white;
+}
