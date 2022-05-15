@@ -106,3 +106,16 @@ nav a {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+footer {
+    background-color: rgba(17, 17, 17, 0.338);
+    height: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
