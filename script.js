@@ -22,9 +22,20 @@ const renderMeals = (meals) => {
                         <div class="meal-name">
                             <h3>${element.name}</h3>
                             <p>Cijena: ${element.price} KM</p>
+                            <button type="button" class="btn btn-danger" onclick="deleteMeal(${element.id})">Izbriši</button>
                         </div>
                         </div>`;
     });
 
     jelo.innerHTML = resultHtml;
+}
+
+//DELETE
+const deleteMeal = (id) => {
+    fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food/${id}`, {
+        method: 'DELETE'
+    })
+    .then(res => {
+        console.log(res);
+    })
 }
