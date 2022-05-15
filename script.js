@@ -83,3 +83,28 @@ const updateMeal = () => {
     })
 
 }
+
+//POST
+const dodajJelo = () => {
+    const hranaFormId = document.getElementById('hrana-id').value;
+    const hranaFormNaziv = document.getElementById('hrana-naziv').value;
+    const hranaFormCijena = document.getElementById('hrana-cijena').value;
+    const hranaFormURL = document.getElementById('hrana-url').value;
+
+    fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food`, {
+        method:'POST',
+        headers: new Headers({
+            'Content-Type': 'application/json'
+        }),
+        body: JSON.stringify({
+            id: hranaFormId,
+            name: hranaFormNaziv,
+            price: hranaFormCijena,
+            imageUrl: hranaFormURL
+        })
+    })
+    .then(response => {
+        console.log(response);
+    })
+
+}
