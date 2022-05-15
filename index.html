@@ -44,7 +44,45 @@
       </div>
     </div>
   </div>
- 
+
+  <!--Update/editovanje jela MODAL-->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="jelo-id" class="col-form-label">Id</label>
+              <input type="text" class="form-control" id="jelo-id" disabled>
+            </div>
+            <div class="form-group">
+              <label for="jelo-naziv" class="col-form-label">Jelo</label>
+              <input type="text" class="form-control" id="jelo-naziv">
+            </div>
+            <div class="form-group">
+              <label for="jelo-cijena" class="col-form-label">Cijena</label>
+              <input type="text" class="form-control" id="jelo-cijena">
+            </div>
+            <div class="form-group">
+              <label for="jelo-url" class="col-form-label">URL</label>
+              <input type="text" class="form-control" id="jelo-url">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="updateMeal()">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
