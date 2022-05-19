@@ -59,6 +59,7 @@ nav a {
 }
 
 .meal-item{
+    background-color: rgba(17, 17, 17, 0.338);
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -119,3 +120,10 @@ footer p {
     font-size: 14px;
     text-align: center;
 }
+
+.maps {
+    padding-bottom: 60px;
+    
+}
+
+
